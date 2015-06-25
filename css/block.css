@@ -1,0 +1,77 @@
+.xoops_theme_left_zone{
+
+}
+
+.xoops_theme_right_zone{
+
+}
+
+.blockTitle{
+
+}
+
+.blockContent{
+
+}
+
+
+/* 左區塊 */
+.leftBlock{
+  position:relative;
+  width:90%;
+  margin:0px auto 15px;
+}
+
+
+/* 右區塊 */
+.rightBlock{
+  position:relative;
+  width:90%;
+  margin:0px auto 15px;
+}
+
+/* 上中區塊 */
+.centerBlock{
+  position:relative;
+}
+
+/* 上中左區塊 */
+.centerLeftBlock{
+  position:relative;
+}
+
+/* 上中右區塊 */
+.centerRightBlock{
+  position:relative;
+}
+
+/* 下中區塊 */
+.centerBottomBlock{
+  position:relative;
+}
+
+/* 下中左區塊 */
+.centerBottomLeftBlock{
+  position:relative;
+}
+
+/* 下中右區塊 */
+.centerBottomRightBlock{
+  position:relative;
+}
+
+
+a.block_config {
+  position:absolute;
+  top:10px;
+  right:10px;
+  display: block;
+  float: right;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/block_config.png);
+}
+
+a.block_config:hover {
+  background-image: url(../images/block_config_hover.png);
+}
