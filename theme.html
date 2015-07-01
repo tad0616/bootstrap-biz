@@ -71,9 +71,11 @@
                 </div>
             </div>
 
-            <div class="<{$row}>">
-                <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/slideshow_responsive.html"}>
-            </div>
+            <{if $slide_width!=0}>
+                <div class="<{$row}>">
+                    <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/slideshow_responsive.html"}>
+                </div>
+            <{/if}>
         </div>
 
 
@@ -109,8 +111,6 @@
     <{if $show_var==1}>
     <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.html"}>
     <{/if}>
-
-
 
 </body>
 </html>
