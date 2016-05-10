@@ -3,16 +3,16 @@
 $theme_change = 1;
 
 //預設佈景種類 bootstrap , bootstrap3 , html , mix
-$theme_kind = 'bootstrap';
+$theme_kind = 'bootstrap3';
 
 //可選用佈景種類 bootstrap , bootstrap3 , html , mix （$theme_change=1 時才有用）
-$theme_kind_arr = 'bootstrap,bootstrap3';
+$theme_kind_arr = 'bootstrap3';
 
 //引入哪些選單？ all(含 my_menu,admin,user),my_menu,admin,user
 $menu_var_kind = 'all';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = 'bootstrap';
+$theme_color = 'bootstrap3';
 
 /*
 tabs-1 版面基礎設定
