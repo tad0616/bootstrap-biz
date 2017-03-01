@@ -18,10 +18,6 @@
 
     <!-- 給模組套用的樣板標籤 -->
     <{$xoops_module_header}>
-    <script src="<{$xoops_url}>/browse.php?Frameworks/jquery/jquery.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/jquery/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/jquery/ui/jquery-ui.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
 
     <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.html 那就不需要這一部份 -->
     <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/theme_css.tpl"}>
@@ -43,7 +39,7 @@
 
         <div class="divPanel notop nobottom">
             <div class="row">
-                <div id="divLogo" class="col-sm-4 text-left">
+                <div id="divLogo" class="col-sm-4 col-sm-4 text-left">
                     <{if $logo_img}>
                         <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/logo.tpl"}>
                     <{else}>
@@ -52,7 +48,7 @@
                     <{/if}>
                 </div>
 
-                <div id="divMenuRight" class="col-sm-8">
+                <div id="divMenuRight" class="col-sm-8 col-sm-8">
                     <div style="margin-top: 67px;" class="pull-right">
                         <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/menu/nav-pills/menu.tpl"}>
                     </div>
@@ -60,7 +56,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 col-sm-12">
                     <div id="contentInnerSeparator"></div>
                 </div>
             </div>
@@ -77,12 +73,7 @@
 
             <div class="divPanel notop page-content">
 
-                <!--主內容區-->
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/siteclosed_login.tpl"}>
-                    </div>
-                  </div>
+                <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/$theme_type.tpl"}>
 
                 <div id="footerInnerSeparator"></div>
             </div>
@@ -94,6 +85,13 @@
 
             <div class="divPanel">
 
+                  <div class="row">
+                    <div class="col-sm-12">
+                    <{if $xoops_isadmin}>
+                      <a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a>
+                    <{/if}>
+                    </div>
+                  </div>
                 <{$xoops_footer}>
 
             </div>
