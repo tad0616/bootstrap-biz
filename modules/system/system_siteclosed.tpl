@@ -54,7 +54,7 @@
 
                 <div id="divMenuRight" class="col-sm-8">
                     <div style="margin-top: 67px;" class="pull-right">
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/menu/nav-pills/menu.tpl"}>
+                        <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/menu/nav-pills/menu.tpl"}>
                     </div>
                 </div>
             </div>
